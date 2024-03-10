@@ -13,6 +13,7 @@ public class MvcMemberFormServlet extends HttpServlet {
 
   @Override
   protected void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+    System.out.println("asdasd");
     String viewPath = "/WEB-INF/views/new-form.jsp";
     RequestDispatcher requestDispatcher = request.getRequestDispatcher(viewPath); // controller -> view
     requestDispatcher.forward(request, response);
