@@ -39,6 +39,7 @@ public class FrontControllerServletV4 extends HttpServlet {
     Map<String, String> paramMap = createParamMap(request);
     Map<String, Object> model = new HashMap<>();
 
+    // 각 process에 해당하는 구현체 cmd + option + b
     String viewName = controller.process(paramMap, model);
 
     MyView view = viewResolver(viewName);
